@@ -14,3 +14,8 @@ fi
 cp -Rv /vagrant/src_puppet/* /etc/puppet
 
 puppet apply /etc/puppet/manifests/site.pp
+
+CYAN='\e[0;36m'
+echo
+echo
+echo -e "${CYAN}Browse to http://localhost:9080/dokuwiki from your host machine to view the default wiki"
